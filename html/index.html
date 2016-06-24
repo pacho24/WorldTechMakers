@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="keywords" content="palabra, palabra_dos, etc">
+    <meta name="description" content="Descripcion de mi sitio web para el seo.">
+    <meta name="author" content="francisco restrepo">
+	<title>Aprendiendo HTML</title>
+</head>
+<body>
+	<!-- este es un comentario de html -->
+
+	<h1>Titulo muy importante</h1>
+	<h2>Titulo con segundo grado de importancia</h2>
+	<h3>Titulo con tercer grado de importancia</h3>
+	<h4>Titulo menos importante</h4>
+	<h5>Titulo con poca relevancia</h5>
+	<h6>Titulo con poca importancia, pero sigue siendo un titulo</h6>
+
+	<!-- Para definir textos normales en html -->
+	<p>Texto en general con importancia</p>
+	<span>Texto sin mucha relevancia</span>
+
+	<!-- Etiqueta para agrupación de contenidos -->
+	<div>
+		<h2>Soy un gran titulo</h2>
+		<p>Hola</p>
+		<span>Soy un Span</span>
+	</div>
+	<section>
+		<h2>Soy un gran titulo</h2>
+		<p>Hola</p>
+		<span>Soy un Span</span>
+	</section>
+
+<!-- Contenido que se va publicando -->
+
+	<article>
+		<h4>Contenido para el article.</h4>
+		<p>Este article podria ser una noticia.</p>
+	</article>
+
+	<aside>
+		<p>Contenido con menos relevancia, aqui van cosas que no tienen que ver con nuestro objetivo de pagina</p>
+	</aside>
+
+	<!--Formularios Web - name, es el nombre con el que van a llegar los datos a nuestro servidor-->
+	<form action="index.html" method="get">
+		<label for="name">User</label> <!--realiza un foco sobre el contenido-->
+		<input type="text" name="nombre" placeholder="User" id="name">
+		<label for="password">Password</label>
+		<input type="password" name="clave" placeholder="Ingresa tu clave" id="password">
+		<input type="submit" value="Iniciar sesion">
+	</form>
+
+	<!--Definiendo enlaces en HTML-->
+	<a href="http://www.google.com" target="_blank">Presiona aqui para ir a Google</a> <!--target para que se abra una nueva página-->
+	<br>
+	<a href="http://www.facebook.com" target="_blank">Red social Facebook</a>
+
+	<!--Nav, header y footer-->
+	<nav> <!--enlaces para navegar en nuestra pagina web--> <!--listas desordenadas y ordenadas-->
+		<ul> <!--agregar elementos a una lista desordenada-->
+			<li>Aguila</li>
+			<li>Club Colombia</li>
+			<li>Miller Lite</li>
+		</ul>
+
+		<ol> <!--agregar elementos a una lista ordenada-->
+			<li>Aguila</li>
+			<li>Club Colombia</li>
+			<li>Miller Lite</li>
+		</ol> 
+
+	</nav>
+
+	<header> <!--Cosas principales de la pagina web-->
+		<p>Este es el encabezado de todo mi sitio web.</p>
+	</header>
+	<footer> <!--avisos legales, terminos y condiciones-->
+		<a href="">Terminos y condiciones</a>
+		<a href="">Amenazas corporativas </a>	
+	</footer>
+	
+	<!-- Agregar imagenes -->
+
+		<img src="http://estancobienestar.com.co/wp-content/uploads/2015/06/11150197_1126400267386344_8054538336994487219_n.jpg">
+</body>
+</html>

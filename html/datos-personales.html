@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Datos Personales</title>
+	<script>
+		var datos = promtp("Sus datos son= ", " ")
+	</script>
+</head>
+<body>
+	<fieldset>
+
+		<legend>Datos Personales</legend>
+		<div>
+		<br>
+			<label>
+				Nombres*:
+				<input required id="nombre" type="text" name="nombre">
+				<script>
+					var Nombres = promtp("Ingrese Nombres", " ");
+					document.write(Nombres);
+				</script>
+			</label>
+			<br>
+			<br>
+			<label>
+				Apellidos*:
+				<input required id="apellido" type="text" name="apellido">
+				<script>
+					var Apellidos = promtp("Ingrese Apellidos", " ");
+					document.write(Apellidos);
+				</script>
+			</label>
+			<br>
+			<br>
+			<label>
+				Tipo de identificación*:
+				<input required id="identificación" type="text" name="identificación">
+				<script>
+					var documento = promtp("Tipo de identificación", " ");
+					document.write(documento);
+				</script>
+			</label>
+		</div>
+		<script>
+		function mostrar (datos)
+		</script>
+		<button onclick="">
+		<input type="submit" id="btnguardar">
+	</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src=angular.min.js></script>
+</head>
+<body ng-app="myApp">
+	<div ng-init=name>
+
+	<p>Name: <br> <input type=text ng-model=name></p>
+
+	<p>Apellido: <br> <input type=text ng-model=apellido></p>
+
+	<p>Hola {{name + " " + apellido}}</p>
+
+	</div>
+
+		<div>
+		Operando1:<br><input type=number ng-model=operando1>
+		<br>
+		<br>
+		Operando2:<br><input type=number ng-model=operando2>
+		<br>
+	
+		<button ng-click="resultado=operando1*operando2">*</button>
+		<button ng-click="resultado=operando1+operando2">+</button>
+		<button ng-click="resultado=operando1-operando2">-</button>
+		<button ng-click="resultado=operando1/operando2">/</button>
+		<p>Resultado:{{ resultado }}</p>
+	
+		</div>
+
+	<div>
+		<input type="text" ng-model="text" placeholder="Enter you input here...">
+		<p>Input value: {{ text }}</p>
+        <p ng-style="text==(text | reverse) ? {color:'blue'} : {color:'red'}">Filtered Value: {{ text | reverse }}</p>
+
+	</div>
+
+
+	<script>
+		var myApp = angular.module("myApp",[]);
+		myApp.filter("reverse", function() {
+			return function(input) {
+				return input.split("").reverse().join("");
+
+			};
+
+		});
+
+	</script>
+
+	<div>
+		Tweet:<br><input type=text ng-model=tweet>
+	</div>
+
+</body>
+</html>

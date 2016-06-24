@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src=angular.min.js></script>
+</head>
+<body ng-app>
+
+
+<div ng-init=quantity=2;cost=5>
+<p>Name: <input type=text ng-model=name></p>
+<p ng-bind=name></p>
+
+<br>
+
+<p>Total in dollar: {{ quantity * cost }}</p>	
+
+<button ng-click="count=count + 1">Click Me!</button>
+<p>{{ count }}</p>
+</div>
+<script>
+function myController($scope){
+	$scope.count = 0;
+}
+
+
+
+</script>
+
+</div>
+
+<div ng-init="firstName='Jhon'; lastName='Doe'">
+<p>The full name is: {{ firstName + " " + lastName }}</p>
+	
+</div>
+
+<div ng-init=points=[1,15,19,2,40]>
+<p>The third result is {{ points[2] }}</p>
+	
+</div>
+
+<div data-ng-init=names=['Luz','Liz','Ana']>
+
+<p>Looping with ng-repeat:</p>
+<ul>
+	<li ng-repeat="x in names">
+	{{ x }}
+	</li>
+</ul>
+	
+	<p>Name: <input type=text ng-model=nombre></p>
+	<p>En mayúsculas {{ nombre | uppercase }}</p>
+</div>
+
+<div>
+Quantity:<input type=number ng-model=quantity>
+Price:<input type=number ng-model=price>
+<p>Total = {{ (quantity*price) | currency }}</p>
+	
+</div>
+
+<script>
+function costController($scope){
+	$scope.quantity = 1;
+	$scope.price = 9.99;
+}
+</script>
+
+<div ng-app="" ng-init="names=[
+{name:'Ana',country:'Paraguay'},
+{name:'Victor',country:'Argentina'},
+{name:'Luis',country:'Brasil'}]">
+<p>Looping with objects:</p>
+<ul>
+<li ng-repeat="x in names | orderBy:'country'">
+{{ x.name + ', ' + x.country }}</li>
+</ul>
+</div>
+
+<div ng-init="names=[
+{name:'Ana',country:'Paraguay'},
+{name:'Victor',country:'Argentina'},
+{name:'Luis',country:'Brasil'}
+{name:'Pacho',country:'Argentina'}
+{name:'Javier',country:'Argentina'}]">
+
+<p>Filtering input:</p>
+<p><input type="text" ng-model="test"></p>
+<ul>
+<li ng-repeat="x in names | filter:test |
+orderBy:'country'">
+{{ x.name + ', ' + x.country }}</li>
+</ul>
+</div>
+
+</body>
+</html>

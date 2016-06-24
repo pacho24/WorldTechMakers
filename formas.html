@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<fieldset>
+		<legend>Detalle de persona</legend>
+		<div>
+			<label>Nombre:
+			<input id="nombre" name="nombre" type="text">
+			</label>
+			<label>
+				Clave
+				<input id="clave" name="clave" type="password">
+			</label>
+			<label>
+				Tel&eacute;fono
+				<input id="teléfono" name="teléfono" type="tel">
+			</label>
+			<label>
+				Correo
+				<input id="Correo" name="Correo" type="email">
+			</label>
+			<label>
+				Fecha
+				<input id="Fecha" name="Fecha" type="date">
+			</label>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Tarjetas de cr&eacute;dito</legend>
+		<div class="card-type">
+
+		<input id="visa" type="radio" name="cardtype">
+		<label for="visa">VISA</label>
+		<input id="master" type="radio" name="cardtype">
+		<label for="master">Master Card</label>
+		<input id="amex" type="radio" name="cardtype">
+		<label for="amex">American Express</label>
+
+		</div>
+
+		<div>
+			<input id="visa" type="checkbox" name="visa">
+		<label for="visa">VISA</label>
+		<input id="master" type="checkbox" name="master">
+		<label for="master">Master Card</label>
+		<input id="amex" type="checkbox" name="amex">
+		<label for="amex">American Express</label>
+
+		</div>
+
+		<div>
+			<label>
+				Descripci&oacute;n:
+				<textarea id="descripcion" name="descripcion" rows="10" cols="20"">
+					</textarea>
+			</label>
+		</div>
+
+		<div>
+			<label>Pa&iacute;s</label>
+			<input id="pais" type="text" name="pais" list="lista-paises">
+			<datalist id="lista-países">
+				<option label="Colombia" value="Colombia"></option>
+				<option label="EEUU" value="EEUU"></option>
+				</datalist>
+
+		</div>
+		<input type="submit" id="btnguardar">
+	</fieldset>
+</body>
+</html>

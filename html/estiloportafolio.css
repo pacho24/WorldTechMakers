@@ -1,0 +1,31 @@
+.title {
+	text-transform: uppercase;
+	color: white;
+}
+
+.title:hover {
+	color: silver;
+}
+
+
+
+
+.lol {
+			float: left;
+			width: 600px;
+			text-align: left;
+			text-align: justify;
+		
+		}
+
+
+
+.foto {
+		display: flex;
+		position: absolute;
+		top: 120px;
+		right: 250;
+		width: 150px;
+		height: 250px;
+		border: 8px groove;
+}

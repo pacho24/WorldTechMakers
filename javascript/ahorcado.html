@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Ahorcado</title>
+</head>
+<body>
+<script>
+	var arreglo = ["perro","gato","canario","iguana","caballo"];
+
+	var indiceAleatorio = Math.ceil(Math.random() * 10) % (arreglo.length);
+
+	document.write(indiceAleatorio + "<br>");
+
+	var palabraAleatoria = arreglo[indiceAleatorio];
+
+	document.write(palabraAleatoria + "<br>");
+
+	for(var i = 0; i < 7; i++) {
+
+	var letraUsuario = prompt("Introduzca una letra: ","");
+
+	var posiletras = new Array()
+	for (var letra = 0, j = 0; letra < palabraAleatoria.length; letra++){
+		var letraMaquina = palabraAleatoria.charAt(letra);
+		if (letraUsuario == letraMaquina) {
+				posiletras[] = letra;
+				j++;
+				encontrada = true;
+			}
+		}
+	}
+
+</script>
+</body>
+</html>
